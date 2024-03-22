@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Search</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+</head>
+<body>
+  
+  <nav class="navbar background">
+    <ul>
+      <li class="item"><a href="index.html">Home</a></li>
+      <li class="item"><a href="login.html">login</a></li>
+      <li class="item"><a href="register.html">register</a></li>
+      <li class="item"><a href="search.html">search</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="background">
+
+    <header>
+      <h1>Candidate Search</h1>
+    </header>
+    
+    <section id="search">
+      <h2>Search for Candidates</h2>
+      <form>
+        <input type="text" id="location" placeholder="Location">
+        <input type="text" id="jobRole" placeholder="Job Role">
+        <button type="button" onclick="searchCandidates()">Search</button>
+      </form>
+    </section>
+    
+    <section id="results">
+      <h2>Search Results</h2>
+      <ul id="candidatesList">
+        <!-- Fetched candidates will be dynamically added here -->
+      </ul>
+    </section>
+    
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
